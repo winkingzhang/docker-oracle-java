@@ -8,7 +8,6 @@ RUN cd /tmp && \
     rm -f jre-7u80-linux-x64.tar.gz && \
     ln -s ${JAVA_BASE}/jre* ${JAVA_BASE}/jre && \
     ln -s ${JAVA_BASE}/jre ${JAVA_BASE}/jvm && \
-    chown -R java:java ${JAVA_BASE} && \
     rm -rf /var/lib/apt/lists/* /var/lib/apt/lists/* /tmp/* /var/tmp/* /var/cache/*
 
 # Define commonly used JAVA_HOME variable
