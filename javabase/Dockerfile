@@ -22,7 +22,7 @@ ENV LC_ALL  en_US.UTF-8
 ENV JAVA_BASE /opt/oracle/java
 
 # Add java dynamic memory script
-COPY memory-opts /opt/oracle/java
+COPY memory-opts.sh /opt/oracle/java
 
 # Install curl, locales, apt-utils and gosu
 # create en_US.UTF-8
