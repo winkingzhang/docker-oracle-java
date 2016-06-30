@@ -11,7 +11,7 @@ RUN cd /tmp && \
     rm -rf /var/lib/apt/lists/* /var/lib/apt/lists/* /tmp/* /var/tmp/* /var/cache/*
 
 # Define commonly used JAVA_HOME variable
-ENV JAVA_HOME ${JRE_HOME}/jre
+ENV JAVA_HOME ${JAVA_BASE}/jre
 
 # Add /opt/java and jdk on PATH variable
 ENV PATH ${PATH}:${JAVA_HOME}/bin:${JAVA_BASE}
